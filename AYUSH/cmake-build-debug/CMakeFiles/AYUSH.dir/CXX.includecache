@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ayush/Desktop/C++/AYUSH/a.cpp
+
+/Users/ayush/Desktop/C++/AYUSH/main.cpp
+iostream
+-
+
