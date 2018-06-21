@@ -30,21 +30,21 @@ void easeArray(int a[],int n){
 }
 
 int main(){
-	// int a[] = {0,1,2,2,0};
-	// int n = sizeof(a)/sizeof(a[0]);
-	// easeArray(a,n);
-	// return 0;
-	int t;
-	cin>>t;
-	while(t--){
-		int n;
-		cin>>n;
-		int a[n];
-		for (int i = 0; i < n; i++)
-		{
-			cin>>a[i];
-		}
-		easeArray(a,n);
-	}
+	int a[] = {0,1,2,2,0};
+	int n = sizeof(a)/sizeof(a[0]);
+	easeArray(a,n);
+	return 0;
+	// int t;
+	// cin>>t;
+	// while(t--){
+	// 	int n;
+	// 	cin>>n;
+	// 	int a[n];
+	// 	for (int i = 0; i < n; i++)
+	// 	{
+	// 		cin>>a[i];
+	// 	}
+	// 	easeArray(a,n);
+	// }
 	return 0;
 }

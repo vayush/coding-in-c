@@ -41,21 +41,21 @@ void visibleNumber(int a[],int n){
 	}
 }
 int main(){
-	// int a[] = {94,92,95,93,92,92,93,92,94,94,94,95,93,93,92,95,95,93,92,95};
-	// int n = sizeof(a)/sizeof(a[0]);
-	// visibleNumber(a,n);
-	// return 0;
-	int t;
-	cin>>t;
-	while(t--){
-		int n;
-		cin>>n;
-		int a[n];
-		for (int i = 0; i < n; i++)
-		{
-			cin>>a[i];
-		}
-		visibleNumber(a,n);
-	}
+	int a[] = {94,92,95,93,92,92,93,92,94,94,94,95,93,93,92,95,95,93,92,95};
+	int n = sizeof(a)/sizeof(a[0]);
+	visibleNumber(a,n);
+	return 0;
+	// int t;
+	// cin>>t;
+	// while(t--){
+	// 	int n;
+	// 	cin>>n;
+	// 	int a[n];
+	// 	for (int i = 0; i < n; i++)
+	// 	{
+	// 		cin>>a[i];
+	// 	}
+	// 	visibleNumber(a,n);
+	// }
 	return 0;
 }
