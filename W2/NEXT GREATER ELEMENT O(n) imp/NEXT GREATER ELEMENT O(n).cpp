@@ -12,7 +12,7 @@ int nextGreater(int a[],int n){
         if(a[i]>s.top()){
             while(!s.empty() && a[i]>s.top()){
                 sum=sum+a[i];
-                cout<<a[i]<<" ";
+                // cout<<a[i]<<" ";
                 s.pop();
             } 
             s.push(a[i]);
@@ -20,9 +20,9 @@ int nextGreater(int a[],int n){
         else if(a[i]<s.top()){
             s.push(a[i]);
         }
-        if(i==n-1){
-            cout<<"0 ";
-        }
+        // if(i==n-1){
+        //     cout<<"0 ";
+        // }
     }
 
     return sum;

@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
-void withoutSpecial(string s,int n){
-  int l=0,r=n-1;
+void withoutSpecial(string s){
+  int l=0,r=s.length()-1;
   while(l<=r){
 
     if(!(s[l]>= 'a' && s[l]<='z'))
@@ -21,7 +21,6 @@ void withoutSpecial(string s,int n){
 
 int main(){
   string s="a!!!b.a.b,b,a,bbb";
-  int n = sizeof(s)/sizeof(s[0]);
-  withoutSpecial(s,n);
+  withoutSpecial(s);
   return 0;
 }

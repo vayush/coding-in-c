@@ -7,7 +7,7 @@ int stairsearch(int a[4][4],int n, int e){
 			cout<<"FOUND   "<<i<<" "<<j;
 			return 1;
 		}
-		if(a[i][j]>e)
+		else if(a[i][j]>e)
 			j--;
 		else
 			i++;
@@ -15,20 +15,14 @@ int stairsearch(int a[4][4],int n, int e){
 	cout<<"NOT FOUND :";
 	return 0;
 }
-int main(){
-	int n,e;
-	cout<<"N <= 4 :";
-	cin>>n;
-	cout<<"\n";
-	int a[4][4];
-	for(int i=0;i<n;i++){
-		for(int j=0;j<n;j++){
-			cin>>a[i][j];
-		}
-	}
-	cout<<"ELEMENT TO SEARCH : ";
-	cin>>e;
-	cout<<"\n";
-	stairsearch(a,n,e);
-return 0;
+int main()
+{
+  int mat[4][4] = { {10, 20, 30, 40},
+                    {15, 25, 35, 45},
+                    {27, 29, 37, 48},
+                    {32, 33, 39, 50},
+                  };
+  stairsearch(mat, 4, 29);
+  return 0;
 }
+

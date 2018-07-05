@@ -7,6 +7,7 @@ int maxProd(int a[],int n){
 
   if(n<2){
     cout<<"NO PAIRS EXIST"<<endl;
+    return 0;
   } 
   if(n==2){
     cout<<a[0]<<" "<<a[1] <<endl;

@@ -38,18 +38,22 @@ void deleteArray(int a[],int n,int k){
 }
 
 int main(){
-	int t;
-	cin>>t;
-	while(t--){
-		int n;
-		cin>>n;
-		int a[n],k;
-		for (int i = 0; i < n; i++)
-		{
-			cin>>a[i];
-		}
-		cin>>k;
-		deleteArray(a,n,k);
-	}
+
+	int a[] = {20,10,25,30,40};
+	deleteArray(a,5,2);
+
+	// int t;
+	// cin>>t;
+	// while(t--){
+	// 	int n;
+	// 	cin>>n;
+	// 	int a[n],k;
+	// 	for (int i = 0; i < n; i++)
+	// 	{
+	// 		cin>>a[i];
+	// 	}
+	// 	cin>>k;
+	// 	deleteArray(a,n,k);
+	// }
 
 }

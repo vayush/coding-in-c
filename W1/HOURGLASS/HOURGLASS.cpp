@@ -2,7 +2,7 @@
 using namespace std;
 
 void hourglass(int a[6][6]){
-  int max=-10;
+  int max=INT_MIN;
   int sum;
   for(int i=0;i<4;i++){
     for(int j=0;j<4;j++){

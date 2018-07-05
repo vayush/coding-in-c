@@ -1,3 +1,0 @@
-/Users/ayush/Desktop/C++/AYUSH/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/ayush/Desktop/C++/AYUSH/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/ayush/Desktop/C++/AYUSH/cmake-build-debug/CMakeFiles/AYUSH.dir

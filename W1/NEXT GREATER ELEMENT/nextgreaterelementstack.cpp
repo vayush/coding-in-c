@@ -1,38 +1,29 @@
-#include <iostream>
-#include "stack.h"
+#include<bits/stdc++.h>
 using namespace std;
-void nextGreater(int a[10],int n){
-	stack s;
-	int next ,element;
-	s.push(a[0]);
-	for(int i=1;i<n;i++){
-		next = a[i];
-		if(s.isEmpty() == 0){
-			element = s.pop();
-			while(next > element){
-				cout<<element<<" "<<next<<"\n";
-				if(s.isEmpty() == 1)
-					break;
-				element = s.pop();
-			}
-			if(element > next)
-				s.push(element);
-		}
-		s.push(next);
-	}
-	while(s.isEmpty() == 0){
-		element= s.pop();
-		next = -1;
-		cout<<element<<" "<<next<<"\n";
-	}
+
+void nge(int a[],int n){
+
+    stack<int> s;
+    s.push(a[0]);
+    int nextgreat;
+    for (int i = 1; i < n; i++)
+    {
+        while(!s.empty() && s.top()<a[i]){
+            int element = s.top();
+            s.pop();
+            cout<<element<<"-->"<<a[i]<<endl;
+        }
+        s.push(a[i]);
+    }
+    while(!s.empty()){
+        int top = s.top();
+        cout<<top<<"-->"<<"-1"<<endl;
+        s.pop();
+    }
 }
 int main(){
-	int n;
-	int arr[10];
-	cin>>n;
-	for(int i=0;i<n;i++){
-		cin>>arr[i];
-	}
-	nextGreater(arr,n);
-	return 0;
+    int a[] = {5,3,2,10,6,8,1,4,12,7,4};
+    int n = sizeof(a)/sizeof(a[0]);
+    nge(a,n);
+    return 0;
 }

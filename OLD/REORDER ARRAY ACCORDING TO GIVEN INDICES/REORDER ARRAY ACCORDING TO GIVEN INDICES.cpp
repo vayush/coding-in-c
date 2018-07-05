@@ -7,7 +7,7 @@ using namespace std;
 // 	// for(int i=0;i<s;i++){
 // 	// 	cout<<a[i];
 // 	// }
-	void print(char a[], int n, int ind)
+void print(char a[], int n, int ind)
 {
     // print from ind-th index to (n+i)th index.
     for (int i = ind; i < n + ind; i++){

@@ -24,16 +24,21 @@ int maxsum(int a[],int n){
     return sum;
 }
 int main(){
-    int t;
-    cin>>t;
-    while(t--){
-        int n;
-        cin>>n;
-        int a[n];
-        for(int i=0;i<n;i++){
-            cin>>a[i];
-        }
-        cout<<maxsum(a,n)<<endl;
-    }
+
+
+    int a[] = {1, 2, 2, 2, 3, 4};
+    int n = sizeof(a)/sizeof(a[0]);
+    cout<<maxsum(a,n);
+    // int t;
+    // cin>>t;
+    // while(t--){
+    //     int n;
+    //     cin>>n;
+    //     int a[n];
+    //     for(int i=0;i<n;i++){
+    //         cin>>a[i];
+    //     }
+    //     cout<<maxsum(a,n)<<endl;
+    // }
 return 0;
 }

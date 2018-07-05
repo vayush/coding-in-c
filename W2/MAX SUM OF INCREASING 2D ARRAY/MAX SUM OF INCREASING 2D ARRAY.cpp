@@ -1,6 +1,6 @@
 // https://practice.geeksforgeeks.org/problems/maximum-sum-of-increasing-order-elements-from-n-arrays/0
-#include<iostream>
-// #include<bits/stdc++.h>
+// #include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int main() {
     int t;

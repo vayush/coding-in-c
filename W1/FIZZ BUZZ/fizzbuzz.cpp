@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 int main(){
-	int n;
-	cin>>n;
+	int n=15;
+	
 	int c3=1, c5=1;
 	for(int i=1 ;i <= n;i++){
 		if(c3 == 3){
@@ -13,7 +13,7 @@ int main(){
 			cout<<"buzz";
 			c5=0;
 		}
-		else if {
+		else{
 			cout<<i;
 		}
 		cout<<"\n";
