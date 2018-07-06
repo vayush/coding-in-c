@@ -49,7 +49,7 @@ void stockbuysell(int a[],int n){
     }
 }
 int main(){
-  int price[] = {100, 180, 260, 310, 535, 695};
+  int price[] = {23,13,25,29,33,19,34,45,65,67};
     int n = sizeof(price)/sizeof(price[0]);
     stockbuysell(price,n);
     return 0;
