@@ -39,7 +39,7 @@ void equalSum(int a[],int n){
             lc++;
             cout<<"Index:"<<i<<endl;
         }
-        if(lsum!=rsum){
+        else{
             rsum = rsum+a[i];
         }
     }
@@ -63,7 +63,7 @@ void equalSum(int a[],int n){
 }
 
 int main(){
-    int a[] = {6,2,3,2,1};
+    int a[] = {1,-1,2,-2,6};
     int n = sizeof(a)/sizeof(a[0]);
     equalSum(a,n);
 }

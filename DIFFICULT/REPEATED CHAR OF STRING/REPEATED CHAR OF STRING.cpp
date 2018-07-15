@@ -16,7 +16,7 @@ char firstRepeating(string str){
 }
 int main ()
 {
-    string str = "geeksforgeeks";
+    string str = "ayushverm";
     cout << firstRepeating(str);
     return 0;
 }

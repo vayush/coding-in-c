@@ -1,34 +1,42 @@
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
-int isPalindrome(char str[]){
-    if(strlen(str)==1){
-        return true;
-    }
+bool isPalindrome(string &s,int start){
 
-    int l=0;
-    int r=strlen(str)-1;
-    while(l<=r){
-        if(str[l] != str[r]){
+    int end = s.length()-1;
+
+    while(start<=end){
+        if(s[start] != s[end]){
             
             return 0;
         }
         else{
-            l++;
-            r--;
+            start++;
+            end--;
         }
     }
+
     return 1;
 }
-int minAppend(char s[]){
-    if(isPalindrome(s)){
-        return 0;
-    }
 
-    s++;
-    return 1+minAppend(s);
+int minAppend(string &str,int start){
+    if(isPalindrome(str,start))
+        return 0;
+    start++;
+
+    return 1+minAppend(str,start);
 }
+
 int main(){
-    char str[]= "abedec";
-    cout<<minAppend(str);
-    
+    string str = "geeks";
+    cout<<minAppend(str,0);
+    // int t;
+    // cin>>t;
+    // cin.ignore();
+    // while(t--){
+    //     string s;
+    //     getline(cin,s);
+    //     cout<<minAppend(s,0);
+    // }
+
+    return 0;
 }

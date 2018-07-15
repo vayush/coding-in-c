@@ -32,7 +32,7 @@ void longestsub(int arr[],int n){
             longLen = um[arr[i]];
 
 
-        cout<<longLen<<" "<<arr[i]<<" "<<um[arr[i]]<<" "<<len<<endl;
+        // cout<<longLen<<" "<<arr[i]<<" "<<um[arr[i]]<<" "<<len<<endl;
     }
 
     cout<<longLen<<endl;
@@ -40,7 +40,7 @@ void longestsub(int arr[],int n){
 }
 
 int main(){
-	int a[] = {10,9,4,5,4,8,6};
+	int a[] = {1,2,3,2,3,7,2,1};
 	int n = sizeof(a)/sizeof(a[0]);
 	longestsub(a,n);
 
