@@ -26,7 +26,7 @@ void largestNumber(int a[],int n){
 }
 
 int main(){
-	int a[] = {54,546,548,60};
+	int a[] = {54,546,548,60,40};
 	int n = sizeof(a)/sizeof(a[0]);
 	largestNumber(a,n);
 	// int t;

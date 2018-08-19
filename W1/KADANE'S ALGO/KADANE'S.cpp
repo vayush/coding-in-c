@@ -22,7 +22,7 @@ int maxSubArray(int a[],int n){
 	return mg;
 }
 int main(){
-	int arr[]={1,3,2,1,-1,1,2,3,4,5};
+	int arr[]={10,-83,-87,14,9,-84,35,-49,-100,-51,19,56,98,3,-76,-92,-56,-91,89,2,95,-15};
 	int n = sizeof(arr)/sizeof(arr[0]);
 	cout<<maxSubArray(arr,n)<<"   ";
 	return 0;
