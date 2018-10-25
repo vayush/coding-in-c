@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 int maxSubArray(int a[],int n){
 	int mc,mg,si=0,ei=0,s=0;

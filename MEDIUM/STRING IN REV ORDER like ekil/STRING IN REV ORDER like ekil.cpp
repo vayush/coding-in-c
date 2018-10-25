@@ -23,9 +23,10 @@ void revWords(string s){
 			i++;
 		}
 
-		if(i==s.length())
-		reverseStr(s,j,i-1);
+		
 	}
+	if(i==s.length())
+		reverseStr(s,j,i-1);
 	for (int i = s.length()-1; i >=0 ; i--)
 	{
 		cout<<s[i];
