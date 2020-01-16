@@ -43,20 +43,8 @@ int minimumSwaps(int a[],int n){
 }
 
 int main(){
-    // int a[] = {1,0,1,1,1,0,0,0,1};
-    // int n = sizeof(a)/sizeof(a[0]);
-    // cout<<minimumSwaps(a,n)<<endl;
-    int t;
-    cin>>t;
-    while(t--){
-        int n;
-        cin>>n;
-        int a[n];
-        for (int i = 0; i < n; i++)
-        {
-            cin>>a[i];
-        }
-
-        cout<<minimumSwaps(a,n)<<endl;
-    }
+    int a[] = {0,0,0,1,1,1};
+    int n = sizeof(a)/sizeof(a[0]);
+    cout<<minimumSwaps(a,n)<<endl;
+    
 }

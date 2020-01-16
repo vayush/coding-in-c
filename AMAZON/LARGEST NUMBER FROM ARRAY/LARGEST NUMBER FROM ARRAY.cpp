@@ -6,7 +6,6 @@ bool myCompare(int a,int b){
 	string x = to_string(a);
 	string y = to_string(b);
 
-
 	if(x+y > y+x){
 		return 1;
 	}
@@ -20,7 +19,7 @@ void largestNumber(int a[],int n){
 	sort(a,a+n,myCompare);
 	for (int i = 0; i < n; i++)
 	{
-		cout<<a[i];
+		cout<<a[i]<<" ";
 	}
 	cout<<endl;
 }

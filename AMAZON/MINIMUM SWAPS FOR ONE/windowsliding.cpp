@@ -40,22 +40,22 @@ void minSwap(int a[],int n){
 }
 
 int main(){
-    // int a[] = {1,0,1,0,1};
-    // int n = sizeof(a)/sizeof(a[0]);
-    // minSwap(a,n);
-    int t;
-    cin>>t;
-    while(t--){
-        int n;
-        cin>>n;
-        int a[n];
-        for (int i = 0; i < n; i++)
-        {
-            cin>>a[i];
-        }
+    int a[] = {1,0,1,0,1};
+    int n = sizeof(a)/sizeof(a[0]);
+    minSwap(a,n);
+    // int t;
+    // cin>>t;
+    // while(t--){
+    //     int n;
+    //     cin>>n;
+    //     int a[n];
+    //     for (int i = 0; i < n; i++)
+    //     {
+    //         cin>>a[i];
+    //     }
 
-        minSwap(a,n);
-    }
+    //     minSwap(a,n);
+    // }
     
     return 0;
 }

@@ -10,8 +10,11 @@ void sandwichVowels(string a){
 	int n= a.size();
 	for(int i=1;i<n-1;i++){
 	        if(a[i-1]!='a' && a[i-1]!='e' && a[i-1]!='i' && a[i-1]!='o' && a[i-1]!='u' ){
+
 	            if(a[i+1]!='a' && a[i+1]!='e' && a[i+1]!='i' && a[i+1]!='o' && a[i+1]!='u'){
+
 	                if(a[i]=='a'  || a[i]=='e'  || a[i]=='i'  || a[i]=='o'  || a[i]=='u'){
+	                	
 	                    
 	                } 
 	                else{
@@ -30,14 +33,14 @@ void sandwichVowels(string a){
 	    cout << res << endl;
 	}
 int main(){
-	// string s = "ceghij";
-	// sandwichVowels(s);
-	int t;
-	cin>>t;
-	while(t--){
-		string s;
-		cin>>s;
-		sandwichVowels(s);
-	}
+	string s = "ceghij";
+	sandwichVowels(s);
+	// int t;
+	// cin>>t;
+	// while(t--){
+	// 	string s;
+	// 	cin>>s;
+	// 	sandwichVowels(s);
+	// }
 	return 0;
 }

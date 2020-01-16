@@ -4,6 +4,11 @@
 using namespace std;
 void ropeCutting(int a[],int n){
 	sort(a,a+n);
+
+	for(int i=0;i<n;i++){
+		cout<<a[i]<<" ";
+	}
+	cout<<endl;
 	int count = 0;
 	int length = a[0];
 	for (int i = 1; i < n; i++)
@@ -22,20 +27,20 @@ void ropeCutting(int a[],int n){
 
 }
 int main(){
-	// int a[] = {122,95,122,122,94,95,94,122,122,93,95,95,122,95,93,122,95,94,122,94,5,36};
-	// int n = sizeof(a)/sizeof(a[0]);
-	// ropeCutting(a,n);
+	int a[] = {122,95,122,122,94,95,94,122,122,93,95,95,122,95,93,122,95,94,122,94,5,36};
+	int n = sizeof(a)/sizeof(a[0]);
+	ropeCutting(a,n);
 
-	int t;
-	cin>>t;
-	while(t--){
-		int n;
-		cin>>n;
-		int a[n];
-		for (int i = 0; i < n; i++)
-		{
-			cin>>a[i];
-		}
-		ropeCutting(a,n);
-	}
+	// int t;
+	// cin>>t;
+	// while(t--){
+	// 	int n;
+	// 	cin>>n;
+	// 	int a[n];
+	// 	for (int i = 0; i < n; i++)
+	// 	{
+	// 		cin>>a[i];
+	// 	}
+	// 	ropeCutting(a,n);
+	// }
 }

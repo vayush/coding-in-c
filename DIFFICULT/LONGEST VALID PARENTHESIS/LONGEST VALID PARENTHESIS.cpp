@@ -31,15 +31,19 @@ int longV(string s){
 
 int main(){
   
-  int t;
-  cin>>t;
-  cin.ignore();
-  while(t--){
+	string s = "(()";
+	cout<<longV(s)<<endl;
 
-    string s;
-    getline(cin,s);
-    cout<<longV(s)<<endl;
-  }
+
+  // int t;
+  // cin>>t;
+  // cin.ignore();
+  // while(t--){
+
+  //   string s;
+  //   getline(cin,s);
+  //   cout<<longV(s)<<endl;
+  // }
 
   return 0;
 }

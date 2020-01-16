@@ -3,7 +3,7 @@ using namespace std;
 void sumtox(int a[],int n,int s){
   sort(a,a+n);
 
-  for (int i = 0; i < n-1; ++i)
+  for (int i = 0; i < n-1; i++)
   {
     int x = a[i];
     int l = i+1;

@@ -1,7 +1,5 @@
 // https://practice.geeksforgeeks.org/problems/delete-array-elements-which-are-smaller-than-next-or-become-smaller/0
-#include<iostream>
-#include<stack>
-#include<vector>
+#include<bits/stdc++.h>
 using namespace std;
 
 void deleteArray(int a[],int n,int k){

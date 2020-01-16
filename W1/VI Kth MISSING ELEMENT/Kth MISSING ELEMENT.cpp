@@ -1,46 +1,34 @@
-#include<iostream>
+#include <bits/stdc++.h>
 using namespace std;
-int kthmiss(int a[],int size,int k){
+void kthmiss(int a[],int n,int k){
 
-    int difference = 0, 
-        ans = 0, count = k;
-    bool flag = 0;
-    for(int i = 0 ; i < size - 1; i++)
-    {   
-        difference = 0;
-        
-        if ((a[i+1]-a[i])!=1) 
-        {
-            difference = 
-                (a[i + 1] - a[i]) - 1;
-            if (difference >= count)
-                {
-                    ans = a[i] + count;
-                    flag = 1;
-                    break;
-                }
-            else
-                count =count-difference;
-        }
+   unordered_set<int> s;
+   for(int i=0;i<n;i++){
+    s.insert(a[i]);
+   }
+
+   int max = *max_element(a,a+n);
+   int min = *min_element(a,a+n);
+
+   int count=0,res;
+
+   for(int i=min+1;i<max;i++){
+    if(s.find(i)==s.end()){
+        count++;
     }
-     
-    if(flag)
-        return ans;
-    else
-        return  -1;
+    if(count==k){
+        res = i;
+        break;
+    }
+
+   }
+   cout<<res;
+
 }
 int main(){
-    int t;
-    cin>>t;
-    while(t--){
-        int l,k;
-        cin>>l;
-        cin>>k;
-        int a[l];
-        for(int i=0;i<l;i++){
-            cin>>a[i];
-        }
-        cout<<kthmiss(a,l,k)<<"\n";
-    }
+
+    int arr[] = { 2, 10, 9, 4 }; 
+    int n = sizeof(arr) / sizeof(arr[0]); 
+    kthmiss(arr, n, 5);
     return 0;
 }

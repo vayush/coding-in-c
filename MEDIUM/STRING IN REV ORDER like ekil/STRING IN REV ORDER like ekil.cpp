@@ -13,7 +13,7 @@ void revWords(string s){
 	int i=0;
 	int j=0;
 	while(i<s.length()){
-		if(s[i]=='.'){
+		if(s[i]==' '){
 			reverseStr(s,j,i-1);
 			
 			j=i+1;
@@ -34,8 +34,8 @@ void revWords(string s){
 	cout<<endl;
 }
 int main(){
-	string s = "pqr.mno";
-	string s2 = "AYUSH.VERMA.IS.A.GOOD.BOY";
+	string s = "pqr mno";
+	string s2 = "AYUSH VERMA IS A GOOD BOY";
 	// cout<<s.length();
 	revWords(s);
 	revWords(s2);

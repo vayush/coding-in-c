@@ -11,6 +11,10 @@ void ans(int a[],int n,int k){
     sort(a,a+n);
   }
 
+  for(int i=0;i<n;i++){
+    cout<<a[i]<<" ";
+  }
+
   long int ans=0;
 
   for (int i = 0; i < n; i++)
@@ -45,20 +49,20 @@ void game(string s1,int k){
 
 
 int main(){
-  // string s1 = "egsdhatazqwtlkokhllblvcikppyrbhvkbaretudmsyxcmjkyunlqptagiaymivwlwpprlvddtdggmsghhrxxkzfvadhkbfvxu";
+  string s1 = "egsdhatazqwtlkokhllblvcikppyrbhvkbaretudmsyxcmjkyunlqptagiaymivwlwpprlvddtdggmsghhrxxkzfvadhkbfvxu";
   
-  // game(s1,88);
-  int t;
-  cin>>t;
+  game(s1,88);
+  // int t;
+  // cin>>t;
   
-  while(t--){
-    cin.ignore();
-    string s;
-    getline(cin,s);
-    int k;
-    cin>>k;
-    game(s,k);
-  }
+  // while(t--){
+  //   cin.ignore();
+  //   string s;
+  //   getline(cin,s);
+  //   int k;
+  //   cin>>k;
+  //   game(s,k);
+  // }
 
   return 0;
 }

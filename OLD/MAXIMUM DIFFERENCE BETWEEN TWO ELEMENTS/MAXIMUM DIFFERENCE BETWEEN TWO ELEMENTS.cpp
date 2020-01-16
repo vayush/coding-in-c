@@ -17,7 +17,7 @@ int maxD(int a[],int n){
 
 int main(){
 
-	int a1[]={1,2,6,80,100};
+	int a1[]={2,90,10,110};
 	int n = sizeof(a1)/sizeof(a1[0]);
 	cout<<maxD(a1,n)<<" ";
 }

@@ -8,6 +8,12 @@ void anagrams(string s[],int n){
   sort(k.begin(),k.end());
   m[k]++;
   }
+
+
+  for(auto it = m.begin();it!=m.end();it++){
+    cout<<it->first<<" "<<it->second<<endl;
+  }
+  
   vector<int>v;
   for(auto it = m.begin();it!=m.end();it++){
       v.push_back(it->second);

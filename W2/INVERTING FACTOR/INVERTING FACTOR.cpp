@@ -19,6 +19,9 @@ int invfactor(int a[],int n){
         a[i]=n;
     }
     sort(a,a+n);
+    for(int i=0;i<n;i++){
+        cout<<a[i]<<" ";
+    }
     for(int i=n-1;i>=1;i--){
         int n = a[i]-a[i-1];
         if(n<result){
@@ -29,17 +32,19 @@ int invfactor(int a[],int n){
 
 }
 int main(){
-     int t;
-     cin>>t;
-     while(t--){
 
-        int n;
-        cin>>n;
-        int a[n];   
-        for(int i=0;i<n;i++){
-            cin>>a[i];
-        }
-        cout<<invfactor(a,n)<<endl;
-     }
+    
+     // int t;
+     // cin>>t;
+     // while(t--){
+
+     //    int n;
+     //    cin>>n;
+     //    int a[n];   
+     //    for(int i=0;i<n;i++){
+     //        cin>>a[i];
+     //    }
+     //    cout<<invfactor(a,n)<<endl;
+     // }
      return 0;
 }

@@ -23,13 +23,13 @@ bool palindrome(string str){
 	return true;
 }
 int main(){
-	int t;
-	cin>>t;
-	cin.ignore();
-	while(t!=0){
-		string str;
-		getline(cin,str);
-		cout<<palindrome(str)<<"\n";
-		t--;
-	}
+	// int t;
+	// cin>>t;
+	// cin.ignore();
+	// while(t!=0){
+	// 	string str;
+	// 	getline(cin,str);
+	// 	cout<<palindrome(str)<<"\n";
+	// 	t--;
+	// }
 }

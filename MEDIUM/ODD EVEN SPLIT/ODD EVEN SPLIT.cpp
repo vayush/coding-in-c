@@ -25,21 +25,21 @@ void oddEven(int a[],int n){
 	cout<<endl;
 }
 int main(){
-	// int a[] = {1,3,2,2,5};
-	// int n = sizeof(a)/sizeof(a[0]);
-	// oddEven(a,n);
-	int t;
-	cin>>t;
-	while(t--){
-		int n;
-		cin>>n;
-		int a[n];
-		for (int i = 0; i < n; i++)
-		{
-			cin>>a[i];
-		}
-		oddEven(a,n);
-	}
+	int a[] = {1,3,2,2,5};
+	int n = sizeof(a)/sizeof(a[0]);
+	oddEven(a,n);
+	// int t;
+	// cin>>t;
+	// while(t--){
+	// 	int n;
+	// 	cin>>n;
+	// 	int a[n];
+	// 	for (int i = 0; i < n; i++)
+	// 	{
+	// 		cin>>a[i];
+	// 	}
+	// 	oddEven(a,n);
+	// }
 
 	return 0;
 }

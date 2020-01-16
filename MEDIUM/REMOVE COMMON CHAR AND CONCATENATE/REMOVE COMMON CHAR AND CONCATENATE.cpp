@@ -1,4 +1,4 @@
-https://practice.geeksforgeeks.org/problems/remove-common-characters-and-concatenate/0
+//https://practice.geeksforgeeks.org/problems/remove-common-characters-and-concatenate/0
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -43,17 +43,21 @@ for(int i=0;i<s2.length();i++){
 }
 
 int main(){
-  int t;
-  cin>>t;
-  cin.ignore();
-  while(t--){
-    string s1 = "";
-    string s2 = "";
-    cin>>s1;
-    cin>>s2;
+
+
+
+  fn("aacbd","gafd");
+  // int t;
+  // cin>>t;
+  // cin.ignore();
+  // while(t--){
+  //   string s1 = "";
+  //   string s2 = "";
+  //   cin>>s1;
+  //   cin>>s2;
     
-    fn(s1,s2);
+  //   fn(s1,s2);
     
-  }
-  return 0;
+  // }
+  // return 0;
 }

@@ -25,7 +25,7 @@ int sumtoSum(int a[],int n){
 
 
 int main(){
-  int a[] = {8,354,314,663,514,629,97,552,857,111,700,642,70};
+  int a[] = {2,11,5,1,4,7};
   int n = sizeof(a)/sizeof(a[0]);
   cout<<sumtoSum(a,n)<<endl;
   // int t;

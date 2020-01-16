@@ -8,7 +8,7 @@ void nge(int a[],int n){
     int nextgreat;
     for (int i = 1; i < n; i++)
     {
-        while(!s.empty() && s.top()<a[i]){
+        while(!s.empty() && a[i]>s.top()){
             int element = s.top();
             s.pop();
             cout<<element<<"-->"<<a[i]<<endl;

@@ -27,7 +27,7 @@ int minAppend(string &str,int start){
 }
 
 int main(){
-    string str = "geeks";
+    string str = "ananab";
     cout<<minAppend(str,0);
     // int t;
     // cin>>t;

@@ -1,24 +1,23 @@
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int main(){
-	int n=15;
-	
-	int c3=1, c5=1;
-	for(int i=1 ;i <= n;i++){
-		if(c3 == 3){
-			cout<<"fizz";
-			c3=0;
-		}
-		if(c5 == 5){
-			cout<<"buzz";
-			c5=0;
-		}
-		else{
+	int n=50;
+	int t=1,f=1;
+	for(int i=1;i<=n;i++){
+		if(t!=3 && f!=5){
 			cout<<i;
 		}
-		cout<<"\n";
-		c3++;
-		c5++;
+		if(t==3){
+			cout<<"fizz ";
+			t=0;
+		}
+		if(f==5){
+			cout<<"buzz";
+			f=0;
+		}
+		cout<<endl;
+		t++;
+		f++;
 	}
-return 0;	
+return 0;
 }
